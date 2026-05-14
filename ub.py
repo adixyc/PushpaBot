@@ -30,15 +30,15 @@ def keep_alive():
 
 # ---------------- TELEGRAM CONFIG ---------------- #
 
-api_id = 30143540
-api_hash = 'f674591a2ee8ee399d0c3847e1707488'
+api_id = 33680569
+api_hash = 'e664ab9cdfb5ef524df25a90d938da93'
 
-session = "1BVtsOI8Buw6mE0MKT91eSKlgCvbgUJMXOoR17ffxigOGOiw7GOzf0ePVI9F--4HKOii4gg6IWIQJA8myhOqIvxS-iP4Clgu70eeQE9jbMNrirjkKVSgKtLKH2D-2dlNA1wkioRYg_ZKgbhf61Qhg_0E5N0tIrvqMlfjVsHQAA_eH_sJUjSnCaw8UfRrMwUQykOGSTy4uratZ9xRKbJzs-1DRf7GO7iD24Mnbk6eiymrE0ARI4SzqWVHC_Aq2O8WCBKMumc1hwLIrPyawFw98zda1UNAivP4UDxv6s4Y5tdRH-N_AkbcPJ0jB24emURFn53JNGB-K7wL1iw_oNCUe5Eow4XOm65U="
+session = "1AZWarzYBu1lVcbCq7RavKaGXCyZETELQIlaeO2hRwOz2p6C8xTTaG-IBc5OrDb6ija_xTr9JulCnZUK_4TmzSJLeXCdzHO2Modss4r26ZPpOU4ay-GJEezu1_PIpQVNPARKAmazM--wOU1IsdBOijzqftkof9Y0dqE-eKcLqfL0_EFSFJCp6kBqZXL2-UHKMHs7L6G4u7KcqQwNsqAFgQY9qHlOuOckbDVEa1pj7PtSOb09hAhp6Xvdu8PFE0qT9Ldq2pq9a_UJdAxnu8ofIJevp0e9dSZ_NkSldtL2iVbGPxkPhVoYf6mCYTW0n37ZNHl6b-10wad6jGIp37W3YWgrv05PLRr8="
 
 client = TelegramClient(StringSession(session), api_id, api_hash)
 
 TARGET_GROUP_ID = -1003623091628
-GROUP_LINK = "@SWAPPINGe_WIFE"
+GROUP_LINK = "@SWAPPINGE_WIFE"
 
 replied_users = set()
 start_time = time.time()
