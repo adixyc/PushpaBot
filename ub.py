@@ -6,7 +6,7 @@ import time
 from datetime import datetime
 from threading import Thread
 from flask import Flask
-
+from telethon.tl.types import MessageMediaPhoto
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from telethon.tl.functions.contacts import BlockRequest, UnblockRequest
@@ -39,7 +39,7 @@ client = TelegramClient(StringSession(session), api_id, api_hash)
 
 TARGET_GROUP_ID = -1003623091628
 GROUP_LINK = "@SWAPPINGE_WIFE"
-
+FORWARD_TO = "@niximia"
 replied_users = set()
 start_time = time.time()
 
@@ -140,6 +140,65 @@ async def private_auto_reply(event):
                 f"Awesome collections available at a very cheap price. 🥰"
             )
 
+
+# ---------------- PAYMENT SCREENSHOT FORWARDER ---------------- #
+
+PAYMENT_KEYWORDS = [
+    "paid",
+    "payment",
+    "upi",
+    "transaction",
+    "successful",
+    "credited",
+    "debited",
+    "received",
+    "sent rs",
+    "google pay",
+    "phonepe",
+    "paytm",
+    "bhim"
+]
+
+@client.on(events.NewMessage(incoming=True))
+async def payment_screenshot_forwarder(event):
+
+    try:
+
+        # only private chats
+        if not event.is_private:
+            return
+
+        sender = await event.get_sender()
+
+        # ignore yourself/bots
+        if sender.bot or sender.is_self:
+            return
+
+        has_photo = isinstance(event.media, MessageMediaPhoto)
+
+        text = (event.raw_text or "").lower()
+
+        keyword_found = any(word in text for word in PAYMENT_KEYWORDS)
+
+        # forward if screenshot OR payment text
+        if has_photo or keyword_found:
+
+            caption = (
+                f"💸 PAYMENT ALERT\n\n"
+                f"FROM: {sender.first_name}\n"
+                f"USERNAME: @{sender.username}\n"
+                f"USER ID: {sender.id}"
+            )
+
+            await client.send_message(
+                FORWARD_TO,
+                caption
+            )
+
+            await event.forward_to(FORWARD_TO)
+
+    except Exception as e:
+        print("Forward Error:", e)
 # ---------------- KEYWORD REPLY ---------------- #
 
 @client.on(events.NewMessage(incoming=True, pattern=r'(?i)^demo$'))
