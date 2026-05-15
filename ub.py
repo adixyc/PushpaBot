@@ -114,7 +114,7 @@ async def send_quotes():
                 except Exception:
                     pass
 
-        await asyncio.sleep(636660)
+        await asyncio.sleep(63888888888888888888888886660)
 
 # ---------------- PRIVATE AUTO REPLY ---------------- #
 
