@@ -131,14 +131,41 @@ async def private_auto_reply(event):
 
             await asyncio.sleep(2)
 
-            await event.respond(
-                f"Hi dear ❤️\n"
-                f"Thank you for messaging me.\n\n"
-                f"Please join our group:\n"
-                f"{GROUP_LINK}\n\n"
-                f"If you're the members of this group then 50% discount on all purchases. 💋\n\n"
-                f"Awesome collections available at a very cheap price. 🥰"
-            )
+            await event.respond('''
+🔥 𝐏𝐑𝐄𝐌𝐈𝐔𝐌 𝐏𝐑𝐈𝐕𝐀𝐓𝐄 𝐆𝐑𝐎𝐔𝐏𝐒 🔥
+
+1. 𝐕𝐈𝐏 𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧 (12 Groups + Bonus)
+2. 𝐑𝐨𝐥𝐞𝐩𝐥𝐚𝐲 𝐏𝐚𝐜𝐤𝐬 (4 Groups)
+3. 𝐃𝐞𝐬𝐢 𝐅𝐚𝐧𝐭𝐚𝐬𝐲
+4. 𝐊𝐚𝐦𝐚𝐬𝐮𝐭𝐫𝐚 𝐂𝐥𝐚𝐬𝐬𝐢𝐜𝐬
+5. 𝐋𝐞𝐬𝐛𝐢𝐚𝐧 𝐂𝐨𝐧𝐭𝐞𝐧𝐭
+6. 𝐂𝐮𝐜𝐤𝐨𝐥𝐝 𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧 (6 Groups)
+7. 𝐒𝐡𝐞𝐦𝐚𝐥𝐞 𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧 (2 Groups)
+8. 𝐇𝐢𝐣𝐚𝐛 𝐅𝐚𝐧𝐭𝐚𝐬𝐲
+9. 𝐅𝐞𝐦𝐝𝐨𝐦 𝐏𝐫𝐞𝐦𝐢𝐮𝐦
+10. 𝐎𝐮𝐭𝐝𝐨𝐨𝐫 𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧
+11. 𝐃𝐞𝐬𝐢 𝐑𝐢𝐯𝐞𝐫 𝐂𝐥𝐢𝐩𝐬
+12. 𝐆𝐚𝐲 𝐂𝐨𝐥𝐥𝐞𝐜𝐭𝐢𝐨𝐧
+13. 𝐂𝐂𝐓𝐕 𝐒𝐭𝐲𝐥𝐞
+14. 𝐌𝐚𝐥𝐥𝐮 𝐂𝐨𝐧𝐭𝐞𝐧𝐭
+15. 𝐈𝐧𝐭𝐞𝐫𝐟𝐚𝐢𝐭𝐡 𝐅𝐚𝐧𝐭𝐚𝐬𝐲
+16. 𝐒𝐭𝐫𝐢𝐩𝐜𝐡𝐚𝐭
+17. 𝐏𝐫𝐞𝐦𝐢𝐮𝐦 𝐄𝐱𝐜𝐥𝐮𝐬𝐢𝐯𝐞 𝐏𝐚𝐜𝐤𝐬
+
+━━━━━━━━━━━━━━━━━━━
+
+✅ 𝐎𝐍𝐄 𝐆𝐑𝐎𝐔𝐏: ₹200 / $5
+✅ 𝐓𝐖𝐎 𝐆𝐑𝐎𝐔𝐏𝐒: ₹350 / $8
+✅ 𝐓𝐇𝐑𝐄𝐄 𝐆𝐑𝐎𝐔𝐏𝐒: ₹500 / $12
+
+💎 𝐅𝐔𝐋𝐋 𝐂𝐎𝐌𝐁𝐎 𝐏𝐀𝐂𝐊: ₹1999 / $50
+
+📩 𝐃𝐌 𝐓𝐎 𝐁𝐔𝐘: @Pushpa_TheFire
+
+⚠️ Demo only via screenshots
+❌ Don’t ask for demo videos
+            
+           ''' )
 
 
 # ---------------- PAYMENT SCREENSHOT FORWARDER ---------------- #
