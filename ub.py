@@ -39,7 +39,7 @@ client = TelegramClient(StringSession(session), api_id, api_hash)
 
 TARGET_GROUP_ID = -1003623091628
 GROUP_LINK = "@SWAPPINGE_WIFE"
-FORWARD_TO = "@niximia"
+FORWARD_TO = -1003942059948
 replied_users = set()
 start_time = time.time()
 
@@ -114,7 +114,7 @@ async def send_quotes():
                 except Exception:
                     pass
 
-        await asyncio.sleep(630)
+        await asyncio.sleep(636660)
 
 # ---------------- PRIVATE AUTO REPLY ---------------- #
 
