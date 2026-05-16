@@ -170,20 +170,7 @@ async def private_auto_reply(event):
 
 # ---------------- PAYMENT SCREENSHOT FORWARDER ---------------- #
 
-PAYMENT_KEYWORDS = [
-    "paid",
-    "payment",
-    "upi",
-    "transaction",
-    "successful",
-    "credited",
-    "debited",
-    "received",
-    "sent rs",
-    "google pay",
-    "phonepe",
-    "paytm",
-    "bhim"
+PAYMENT_KEYWORDS = [ "679098uyyttty7ii8"
 ]
 
 @client.on(events.NewMessage(incoming=True))
