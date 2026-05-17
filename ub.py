@@ -37,7 +37,7 @@ session = "1AZWarzYBu1lVcbCq7RavKaGXCyZETELQIlaeO2hRwOz2p6C8xTTaG-IBc5OrDb6ija_x
 
 client = TelegramClient(StringSession(session), api_id, api_hash)
 
-TARGET_GROUP_ID = -1003623091628
+TARGET_GROUP_ID = -1003624979028
 GROUP_LINK = "@SWAPPINGE_WIFE"
 FORWARD_TO = -1003942059948
 replied_users = set()
